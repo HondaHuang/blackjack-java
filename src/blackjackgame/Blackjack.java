@@ -116,7 +116,7 @@ public class Blackjack extends JFrame {
 
 	public int setWager(int bet) {
 		try {
-			bet = Integer.parseInt(JOptionPane.showInputDialog("Enter Your Bet" + " (1 - " + cash + "):"));
+			bet = Integer.parseInt(JOptionPane.showInputDialog("Enter Your Bet" + " (Max: " + cash + "):"));
 		} catch (NumberFormatException ex) {
 			bet = 0;
 		}
